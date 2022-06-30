@@ -1,0 +1,19 @@
+/* main.css / noscript / YDITS Official site / Yone */
+@charset "UTF-8";
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2em 0;
+}
+
+#main h1 {
+  margin: .5em 0;
+}
+
+#main p {
+  margin: .5em 0;
+  text-align: center;
+}
