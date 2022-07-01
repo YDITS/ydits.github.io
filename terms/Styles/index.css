@@ -34,6 +34,11 @@ main {
   font-size: 1.2em;
 }
 
+#main div ol,
+#main div ul {
+  padding-left: 1.5em;
+}
+
 #main .after>span {
   text-align: right;
 }

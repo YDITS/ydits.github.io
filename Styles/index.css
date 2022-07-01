@@ -2,25 +2,25 @@
 @charset "UTF-8";
 
 body {
-  background-color: #303030;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
 /* ---------- main ---------- */
 main {
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 
+/* ----- hero ----- */
 #hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  height: 60vh;
-  box-shadow: 0 100px 100px 5px rgba(0, 0, 0, .2);
+  height: 50vh;
 
-  padding: 4em 0;
+  /* padding: 4em 0; */
   background-color: #303030;
   color: #eeeeee;
 
@@ -40,40 +40,74 @@ main {
   font-size: 1.7em;
 }
 
-#navbar {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  background-color: #606060;
-
-  user-select: none;
+/* ----- main ----- */
+#main {
+  min-height: 50vh;
+  color: #010101;
 }
 
-#navbar ul {
+#main .link {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
 
-  width: 90%;
-  height: 3em;
+  font-size: 1.3em;
 }
 
-#navbar ul>li {
+#main .link a {
+  color: #303030;
+  text-decoration: none;
+}
+
+#main .link a:hover {
+  text-decoration: underline;
+}
+
+#main .sections {
+  padding: 2em 0;
+}
+
+#main .sectionTitle {
+  margin: .5em 0;
+}
+
+/* --- Message --- */
+#message {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
-  height: 100%;
-  width: 40%;
-
-  cursor: pointer;
+  text-align: center;
+  font-size: 1.2em;
 }
 
-#navbar ul>li:hover {
-  background-color: #80808080;
+#link_news {
+  display: flex;
+}
+
+/* --- news --- */
+#news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#link_news {
+  display: flex;
+}
+
+/* --- platform --- */
+#platforms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Official accounts --- */
+#officialAccounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ---------- header ---------- */
@@ -101,7 +135,6 @@ header nav>ul>li>a {
 
 /* ---------- footer ---------- */
 footer {
-  box-shadow: 100px 0 100px 5px rgba(0, 0, 0, .2);
   background-color: #606060;
   color: #ffffff;
 }
@@ -114,5 +147,13 @@ footer {
 
   header nav>ul>li>a {
     color: #010101;
+  }
+
+  #hero {
+    font-size: .8em;
+  }
+
+  #message {
+    font-size: 1em;
   }
 }
