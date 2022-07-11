@@ -29,6 +29,8 @@
   align-items: center;
 
   margin: .5em 0;
+
+  font-size: 1.5em;
 }
 
 #content {
@@ -42,4 +44,11 @@
 
 #content .text {
   padding: 1em 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  #title {
+    font-size: 1.2em;
+  }
 }
