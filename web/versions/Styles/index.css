@@ -1,4 +1,14 @@
-/* index.css / web-versions / YDITS official site / Yone */
+/* 
+
+  index.css | web versions | YDITS official site
+
+  (c) 2022 よね/Yone
+
+*/
+#hero .title {
+  text-align: center;
+}
+
 #main {
   padding: 2em 10vw;
 }
