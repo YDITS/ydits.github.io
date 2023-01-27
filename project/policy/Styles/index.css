@@ -1,0 +1,50 @@
+/* 
+
+  index.css | YDITS Official site
+
+  (c) 2022 よね/Yone
+
+*/
+@charset "UTF-8";
+
+main {
+  padding: 4em 0 8em 0;
+}
+
+#pageTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 2em;
+
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+#main {
+  padding: 0 10vw;
+}
+
+#main div {
+  margin-bottom: 4em;
+}
+
+#main .before {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#main div h2 {
+  margin-bottom: .5em;
+  font-size: 1.2em;
+}
+
+#main div ol,
+#main div ul {
+  padding-left: 1.5em;
+}
+
+#main .after>span {
+  text-align: right;
+}

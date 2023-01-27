@@ -1,0 +1,140 @@
+/* 
+
+  index.css | Peoject | YDITS Official site
+
+  (c) 2022 よね/Yone
+
+*/
+@charset "UTF-8";
+
+body {
+  background-color: #101020;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
+/* ---------- Main ---------- */
+
+/* ----- hero ----- */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 16em;
+  height: 80vh;
+
+  /* padding: 4em 0; */
+
+  user-select: none;
+}
+
+#hero span {
+  display: block;
+}
+
+#hero .title {
+  font-size: 4em;
+  font-family: 'Noto Serif', serif;
+}
+
+/* ----- main ----- */
+#main {
+  min-height: 50vh;
+}
+
+#main .link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 1.3em;
+}
+
+#main .link a {
+  text-decoration: none;
+}
+
+#main .link a:hover {
+  text-decoration: underline;
+}
+
+#main .sections {
+  padding: 2em 0;
+}
+
+#main .sectionTitle {
+  margin: .5em 0;
+}
+
+/* --- recruit --- */
+#recruit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sendBtn {
+    margin-top: 2em;
+    padding: .5em;
+}
+
+#error {
+    display: none;
+}
+
+#error.show {
+    display: inline-block;
+}
+
+/* ---------- header ---------- */
+header {
+  background-color: #00000000;
+  color: #ffffff;
+}
+
+header .logo {
+  color: #ffffff;
+}
+
+header .btn_link {
+  background-color: #606060;
+}
+
+header nav>ul>li:hover {
+  background-color: #ffffff80;
+}
+
+
+header nav>ul>li>a {
+  color: #ffffff;
+}
+
+/* ---------- footer ---------- */
+footer {
+  background-color: #606060;
+  color: #ffffff;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  header nav {
+    background-color: #303030;
+  }
+
+  header nav>ul>li>a {
+    color: #010101;
+  }
+
+  #hero {
+    font-size: .8em;
+  }
+
+  #message {
+    font-size: 1em;
+  }
+}
