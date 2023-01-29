@@ -2,7 +2,7 @@
 
   index.html | Project | YDITS Official site
 
-  (c) 2022 よね/Yone
+  (c) 2022-2023 よね/Yone
 
 -->
 <!DOCTYPE html>
@@ -16,21 +16,18 @@
   <meta name="keywords" content="YDITS">
   <meta name="author" content="よね/Yone">
   <meta name="generator" content="Microsoft Visual Studio Code">
-  <title>YDITS公式サイト</title>
+  <title>YDITS Project</title>
 
   <meta name="color-scheme" content="dark">
 
   <!--- OGP --->
   <meta property="og:url" content="https://yone1130.github.io/YDITS/project/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="YDITS公式サイト">
+  <meta property="og:site_name" content="YDITS Project">
   <meta property="og:title" content="YDITS公式サイト">
   <meta property="og:description" content="YDITSの公式サイトです。">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@yone1130_">
-
-  <!--- Windows --->
-  <meta name="application-name" content="YDITS for Web">
 
   <!----- Links ----->
   <base href="https://yone1130.github.io/YDITS/">
@@ -79,13 +76,17 @@
         <div id="terms">
             <input type="checkbox" id="agreeChk">
             <label>
-                私は参加申請をするにあたり、<a href="https://yone1130.github.io/YDITS/terms/" target="_blank">YDITS利用規約</a> と <a href="./project/policy" target="_blank">プライバシーポリシー</a> に同意します。
+                私は参加申請をするにあたり、<a href="../terms/" target="_blank">利用規約</a> と <a href="../policy" target="_blank">プライバシーポリシー</a> に同意します。<br>
+            </label>
+            <input type="checkbox" id="ageChk">
+            <label>
+                私は15歳以上です。もしくは15歳未満ですが親権者の同意を得ています。
             </label>
         </div>
 
         <button id="sendBtn">申請する</button>
 
-        <span id="error" style="color: #ff4040;">同意していません</span>
+        <span id="error" style="color: #ff4040;">同意していない項目があります</span>
       </section>
     </section>
   </main>
