@@ -1,8 +1,8 @@
 /* 
 
-  index.css | Peoject | YDITS Official site
+  index.css | Project | YDITS Official site
 
-  (c) 2022 よね/Yone
+  (c) 2022-2023 よね/Yone
 
 */
 @charset "UTF-8";
@@ -64,7 +64,7 @@ a {
 }
 
 #main .sections {
-  padding: 2em 0;
+  padding: 2em 10vw;
 }
 
 #main .sectionTitle {
@@ -116,7 +116,7 @@ header nav>ul>li>a {
 
 /* ---------- footer ---------- */
 footer {
-  background-color: #606060;
+  background-color: #80808010;
   color: #ffffff;
 }
 
