@@ -1,0 +1,50 @@
+/* 
+
+  index.css / colorScheme / YDITS Official site
+
+  (c) 2022 よね/Yone
+
+*/
+@charset "UTF-8";
+
+#main {
+  padding: 2em 10vw;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: .5em 0;
+}
+
+#content {
+    padding: 2em 0;
+}
+
+#content .text {
+    padding: 1em 0;
+}
+
+#content h2 {
+    padding: 1em 0;
+}
+
+#content ol {
+    list-style: none;
+}
+
+#icon {
+    display: block;
+    margin: 2em 0;
+}
+
+#exp {
+    display: block;
+    margin: 2em 0;
+}
+
+#expImg {
+    width: 100%;
+}
