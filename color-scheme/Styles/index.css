@@ -28,7 +28,12 @@
 }
 
 #content h2 {
-    padding: 1em 0;
+    font-size: 1.2em;
+}
+
+#g {
+    display: block;
+    padding-bottom: 2em;
 }
 
 #content ol {

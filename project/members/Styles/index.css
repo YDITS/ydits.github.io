@@ -1,6 +1,6 @@
 /* 
 
-  index.css | Project | YDITS Official site
+  index.css | Project-Members | YDITS Official site
 
   (c) 2022-2023 よね/Yone
 
@@ -25,7 +25,7 @@ a {
   align-items: center;
 
   min-height: 16em;
-  height: 80vh;
+  height: 50vh;
 
   /* padding: 4em 0; */
   text-align: center;
@@ -45,6 +45,7 @@ a {
 /* ----- main ----- */
 #main {
   min-height: 50vh;
+  padding: 2em 10vw;
 }
 
 #main .link {
@@ -69,44 +70,48 @@ a {
 
 #main .sectionTitle {
   margin: .5em 0;
+  text-align: center;
 }
 
-/* --- description --- */
-#des {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-}
-
-/* --- Members --- */
+/* ----- Members ----- */
 #members {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    padding: 2em 0;
     text-align: center;
 }
 
-/* --- recruit --- */
-#recruit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.row {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 5em;
+    width: 100%;
+
+    align-items: center;
 }
 
-#sendBtn {
-    margin-top: 2em;
-    padding: .5em;
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 16em;
+    padding: .5em 0;
+
+    text-align: center;
 }
 
-#error {
-    display: none;
+.icon {
+    width: 8em;
+    border-radius: 50%;
 }
 
-#error.show {
-    display: inline-block;
+.name {
+    margin-top: 1em;
+    font-weight: 600;
 }
 
 /* ---------- header ---------- */
@@ -140,19 +145,20 @@ footer {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  header nav {
-    background-color: #303030;
-  }
+    header nav {
+        background-color: #303030;
+    }
 
-  header nav>ul>li>a {
-    color: #010101;
-  }
+    header nav>ul>li>a {
+        color: #010101;
+    }
 
-  #hero {
-    font-size: .8em;
-  }
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
 
-  #message {
-    font-size: 1em;
-  }
+    .member {
+        padding: 1em;
+    }
 }

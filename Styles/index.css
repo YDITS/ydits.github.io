@@ -1,22 +1,22 @@
 /* 
 
-  index.css | Project | YDITS Official site
+  index.css | YDITS Official site
 
-  (c) 2022-2023 よね/Yone
+  (c) 2022 よね/Yone
 
 */
 @charset "UTF-8";
 
 body {
-  background-color: #101020;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
-a {
-  color: #ffffff;
+/* ---------- main ---------- */
+main {
+  background-color: #eeeeee;
 }
 
-/* ---------- Main ---------- */
 /* ----- hero ----- */
 #hero {
   display: flex;
@@ -25,10 +25,11 @@ a {
   align-items: center;
 
   min-height: 16em;
-  height: 80vh;
+  height: 50vh;
 
   /* padding: 4em 0; */
-  text-align: center;
+  background-color: #303030;
+  color: #eeeeee;
 
   user-select: none;
 }
@@ -38,13 +39,18 @@ a {
 }
 
 #hero .title {
-  font-size: 4em;
-  font-family: 'Noto Serif', serif;
+  font-size: 3em;
+}
+
+#hero .des {
+  text-align: center;
+  font-size: 1.7em;
 }
 
 /* ----- main ----- */
 #main {
   min-height: 50vh;
+  color: #010101;
 }
 
 #main .link {
@@ -56,6 +62,7 @@ a {
 }
 
 #main .link a {
+  color: #303030;
   text-decoration: none;
 }
 
@@ -64,54 +71,62 @@ a {
 }
 
 #main .sections {
-  padding: 4em 10vw;
+  padding: 2em 0;
 }
 
 #main .sectionTitle {
   margin: .5em 0;
 }
 
-/* --- description --- */
-#des {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* --- Message --- */
+#message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
+  font-size: 1.2em;
 }
 
-/* --- Members --- */
-#members {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
+#link_news {
+  display: flex;
 }
 
-/* --- recruit --- */
-#recruit {
+/* --- news --- */
+#news {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#sendBtn {
-    margin-top: 2em;
-    padding: .5em;
+#link_news {
+  display: flex;
 }
 
-#error {
-    display: none;
+/* --- platform --- */
+#apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#error.show {
-    display: inline-block;
+/* --- Official accounts --- */
+#officialAccounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* --- Project --- */
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 /* ---------- header ---------- */
 header {
-  background-color: #00000000;
+  background-color: #606060;
   color: #ffffff;
 }
 
@@ -134,7 +149,7 @@ header nav>ul>li>a {
 
 /* ---------- footer ---------- */
 footer {
-  background-color: #80808010;
+  background-color: #606060;
   color: #ffffff;
 }
 
