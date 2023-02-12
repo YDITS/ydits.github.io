@@ -1,25 +1,23 @@
 
 # YDITS
 
-## About | 概要
-
+## About
 YDITSのサイトです。  
 
-## 使用技術
+## Usage Technology
 
-#### 言語
+#### Lagage
 - HTML5/CSS3
 - JavaScript
 
-#### コード管理
-- Git/GitHub
-
-#### 開発
-- Visual Studio Code
-
-#### 公開
+#### Build
 - GitHub Pages
 
-## LICENCE | ライセンス
+#### Developing Software
+- Visual Studio Code
 
+#### Code Management
+- Git/GitHub
+
+## LICENCE
 個人用およびGitHub Pages公開用のため、**ライセンスは置いておらず、改変や複製は一切禁止しています。**
