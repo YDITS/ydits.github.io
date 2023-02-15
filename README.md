@@ -2,7 +2,7 @@
 # YDITS
 
 ## About
-YDITSホームページです。  
+YDITSのサイトです。  
 
 ## Usage Technology
 
