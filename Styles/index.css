@@ -1,173 +1,166 @@
-/* 
+/*
 
-  index.css | YDITS Official site
+    index.css | YDITS Official site
 
-  (c) 2022-2023 よね/Yone
+    (c) 2022-2023 よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
 
 */
 @charset "UTF-8";
 
 body {
-  background-color: #ffffff;
-  color: #ffffff;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 
-/* ---------- main ---------- */
 main {
-  background-color: #eeeeee;
+    background-color: #eeeeee;
 }
 
-/* ----- hero ----- */
 #hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  min-height: 16em;
-  height: 50vh;
+    min-height: 16em;
+    height: 50vh;
 
-  /* padding: 4em 0; */
-  background-color: #303030;
-  color: #eeeeee;
+    /* padding: 4em 0; */
+    background-color: #303030;
+    color: #eeeeee;
 
-  user-select: none;
+    user-select: none;
 }
 
 #hero span {
-  display: block;
+    display: block;
 }
 
 #hero .title {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 #hero .des {
-  text-align: center;
-  font-size: 1.7em;
+    text-align: center;
+    font-size: 1.7em;
 }
 
-/* ----- main ----- */
 #main {
-  min-height: 50vh;
-  color: #010101;
+    min-height: 50vh;
+    color: #010101;
 }
 
 #main .link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 #main .link a {
-  color: #303030;
-  text-decoration: none;
+    color: #303030;
+    text-decoration: none;
 }
 
 #main .link a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #main .sections {
-  padding: 2em 0;
+    padding: 2em 0;
 }
 
 #main .sectionTitle {
-  margin: .5em 0;
+    margin: .5em 0;
 }
 
-/* --- Message --- */
 #message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  text-align: center;
-  font-size: 1.2em;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 #link_news {
-  display: flex;
+    display: flex;
 }
 
-/* --- news --- */
 #news {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #link_news {
-  display: flex;
+    display: flex;
 }
 
-/* --- platform --- */
 #apps {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* --- Official accounts --- */
 #officialAccounts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* --- Project --- */
 #project {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-/* ---------- header ---------- */
 header {
-  background-color: #606060;
-  color: #ffffff;
+    background-color: #606060;
+    color: #ffffff;
 }
 
 header .logo {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 header .btn_link {
-  background-color: #606060;
+    background-color: #606060;
 }
 
 header nav>ul>li:hover {
-  background-color: #ffffff80;
+    background-color: #ffffff80;
 }
 
 
 header nav>ul>li>a {
-  color: #ffffff;
+    color: #ffffff;
 }
 
-/* ---------- footer ---------- */
 footer {
-  background-color: #606060;
-  color: #ffffff;
+    background-color: #606060;
+    color: #ffffff;
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  header nav {
-    background-color: #303030;
-  }
+    header nav {
+        background-color: #303030;
+    }
 
-  header nav>ul>li>a {
-    color: #010101;
-  }
+    header nav>ul>li>a {
+        color: #010101;
+    }
 
-  #hero {
-    font-size: .8em;
-  }
+    #hero {
+        font-size: .8em;
+    }
 
-  #message {
-    font-size: 1em;
-  }
+    #message {
+        font-size: 1em;
+    }
 }

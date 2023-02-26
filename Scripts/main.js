@@ -1,58 +1,47 @@
 // 
-// main.js / YDITS Official site / Yone
+// main.js | YDITS Official site
+//
+// (c) 2022-2023 よね/Yone
+//
+// No modification or reproduction of any kind is permitted.
+// 改変や複製を一切禁じます。
 // 
 
-// ---------- Init var ---------- //
-
 const name_site = "YDITS 公式ページ";
-
 let isActive_headerLink = false;
 
-// ---------- Main ---------- //
-document.addEventListener('DOMContentLoaded', function(){
-  init_page();
+document.addEventListener('DOMContentLoaded', function () {
+    init_page();
 });
 
 // ---------- Functions ---------- //
-
 // ----- Page ----- //
-function init_page(){
-  init_commonElements();
+function init_page() {
+    init_commonElements();
 };
 
 // --- Init common elements --- //
-function init_commonElements(){
-  init_commonElements_header();
-  init_commonElements_footer();
-};
+function init_commonElements() {
+    $("header").load("./elements/header.html");
 
-// header
-function init_commonElements_header(){
+    // header link button
+    $(document).on('click', 'header .btn_link', function () {
+        if (!isActive_headerLink) {
+            isActive_headerLink = true;
 
-  $("header").load("./elements/header.html");
+            $('header .btn_link>.open').removeClass('active');
+            $('header .btn_link>.close').addClass('active');
 
-  // header link button
-  $(document).on('click', 'header .btn_link', function(){
-    if(!isActive_headerLink){
-      isActive_headerLink = true;
+            $('header nav').addClass('active');
+        } else if (isActive_headerLink) {
+            isActive_headerLink = false;
 
-      $('header .btn_link>.open').removeClass('active');
-      $('header .btn_link>.close').addClass('active');
+            $('header .btn_link>.close').removeClass('active');
+            $('header .btn_link>.open').addClass('active');
 
-      $('header nav').addClass('active');
-    } else if(isActive_headerLink){
-      isActive_headerLink = false;
+            $('header nav').removeClass('active');
+        }
+    });
 
-      $('header .btn_link>.close').removeClass('active');
-      $('header .btn_link>.open').addClass('active');
-
-      $('header nav').removeClass('active');
-    }
-  });
-
-};
-
-// footer
-function init_commonElements_footer(){
-  $("footer").load("./elements/footer.html");
+    $("footer").load("./elements/footer.html");
 };
