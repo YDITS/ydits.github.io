@@ -35,12 +35,31 @@ main {
     user-select: none;
 }
 
+#hero .wrapper {
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #hero span {
     display: block;
+    text-align: center;
 }
 
 #hero .title {
     font-size: 3em;
+    animation-name: fadein;
+    animation-duration: 2s;
 }
 
 #hero .des {
