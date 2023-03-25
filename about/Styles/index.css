@@ -1,0 +1,37 @@
+/*
+
+    index.css | about | YDITS Official site
+
+    (c) 2022-2023 よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+#main {
+    padding: 0 10vw;
+    font-size: 14px;
+}
+
+#pageTitle {
+    padding: 2em 0;
+    text-align: center;
+}
+
+#main table {
+    margin: 0 auto;
+}
+
+#main table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#main table tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#main table tbody th,
+#main table tbody td {
+    min-width: 10em;
+    padding: .5em 2em;
+}
