@@ -8,6 +8,8 @@
 // 
 
 $(() => {
+    let isActive_headerLink = False;
+
     $("header").load("./elements/header.html");
 
     $(document).on('click', 'header .btn_link', () => {
