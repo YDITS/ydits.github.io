@@ -4,18 +4,14 @@
 // (c) 2022-2023 よね/Yone
 // 
 
-$(document).on('DOMContentLoaded', form());
+$(() => {
+    const FORM_PATH = "https://docs.google.com/forms/d/e/1FAIpQLSce_20PsxNGSIf893ybw00MGUI1X20WrprNBkAhC8L3lHW7eA/viewform";
 
-function form(){
-
-    let formPath = "https://docs.google.com/forms/d/e/1FAIpQLSce_20PsxNGSIf893ybw00MGUI1X20WrprNBkAhC8L3lHW7eA/viewform";
-
-    $(document).on('click', '#sendBtn', function(){
+    $(document).on('click', '#sendBtn', () => {
         if (document.getElementById('agreeChk').checked && document.getElementById('ageChk').checked) {
-            console.log('clicked')
-            window.open(formPath, '_blank');
+            window.open(FORM_PATH, '_blank');
         } else {
             $('#error').addClass('show');
         }
     });
-}
+});

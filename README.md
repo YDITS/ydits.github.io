@@ -6,19 +6,13 @@ YDITSのサイトです。
 
 ## Usage Technology
 
-#### Lagage
+#### Lagages
 - HTML5/CSS3
 - JavaScript
+- jQuery
 
-#### Build
-- GitHub Pages
-
-#### Developing Software
-- Visual Studio Code
-
-#### Code Management
-- Git/GitHub
+#### Build & Deploy
+- Cloudflare Pages
 
 ## LICENCE
-個人用およびGitHub Pages公開用のため、**ライセンスは置いておらず、改変や複製は一切禁止しています。**
-
+サイト公開用のため、**ライセンスは置いておらず、改変は一切禁止しています。**
