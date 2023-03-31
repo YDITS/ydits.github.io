@@ -8,7 +8,7 @@
 // 
 
 $(() => {
-    let isActive_headerLink = False;
+    let isActive_headerLink = false;
 
     $("header").load("./elements/header.html");
 
