@@ -10,6 +10,7 @@
 const pageLangages = [
     "ja-jp",
     "en-us",
+    "zh-cn"
 ]
 
 $(() => {
