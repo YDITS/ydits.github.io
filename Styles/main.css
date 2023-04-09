@@ -2,7 +2,7 @@
 
     main.css | YDITS Official site
 
-    (c) 2022-2023 よね/Yone
+    (c) YDITS
 
     No modification or reproduction of any kind is permitted.
     改変や複製を一切禁じます。
@@ -90,6 +90,15 @@ header .logo>img {
     border-radius: .2em;
 }
 
+#langSelect { 
+    display: flex;
+    align-items: center;
+}
+
+#langSelect span {
+    margin-right: .5rem;
+}
+
 header .btn_link {
     position: fixed;
     top: .5em;
@@ -168,8 +177,11 @@ footer {
     user-select: none;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
+    #langSelect { 
+        margin-right: 4em;
+    }
+
     header .btn_link {
         display: flex;
     }

@@ -1,11 +1,16 @@
 // 
 // main.js | YDITS Official site
 //
-// (c) 2022-2023 よね/Yone
+// (c) YDITS
 //
 // No modification or reproduction of any kind is permitted.
 // 改変や複製を一切禁じます。
 // 
+
+const pageLangages = [
+    "ja-jp",
+    "en-us",
+]
 
 $(() => {
     let isActive_headerLink = false;
@@ -31,4 +36,32 @@ $(() => {
     });
 
     $("footer").load("./elements/footer.html");
+
+    let path = location.pathname;
+    let pathArray = path.split("/");
+
+    setTimeout(() => {
+        const langSelectBox = document.getElementById('langSelectBox');
+        if (pageLangages.includes(pathArray[1])) {
+            langSelectBox.value = pathArray[1];
+        }
+    }, 500);
+
+    $(document).on('change', '#langSelectBox', () => {
+        let langValue = langSelectBox.value;
+
+        if (pageLangages.includes(pathArray[1])) {
+            if (langValue == "ja-jp") {
+                location.pathname = path.slice(6);
+            } else {
+                location.pathname = langValue + path.slice(6);
+            }
+        } else {
+            if (langValue == "ja-jp") {
+                location.pathname = path;
+            } else {
+                location.pathname = langValue + path;
+            }
+        }
+    });
 });
