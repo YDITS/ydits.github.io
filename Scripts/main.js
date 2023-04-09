@@ -38,17 +38,10 @@ $(() => {
 
     $("footer").load("./elements/footer.html");
 
-    let path = location.pathname;
-    let pathArray = path.split("/");
-
-    setTimeout(() => {
-        const langSelectBox = document.getElementById('langSelectBox');
-        if (pageLangages.includes(pathArray[1])) {
-            langSelectBox.value = pathArray[1];
-        }
-    }, 500);
-
     $(document).on('change', '#langSelectBox', () => {
+        const langSelectBox = document.getElementById('langSelectBox');
+        let path = location.pathname;
+        let pathArray = path.split("/");
         let langValue = langSelectBox.value;
 
         if (pageLangages.includes(pathArray[1])) {
