@@ -8,5 +8,7 @@
 // 
 
 $(() => {
-    $("header").load("./zh-cn/elements/header.html");
+    setTimeout(() => {
+        $("header").load("./zh-cn/elements/header.html");
+    }, 500);
 });

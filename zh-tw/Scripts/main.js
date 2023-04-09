@@ -9,6 +9,6 @@
 
 $(() => {
     setTimeout(() => {
-        $("header").load("./en-us/elements/header.html");
+        $("header").load("./zh-tw/elements/header.html");
     }, 500);
 });
