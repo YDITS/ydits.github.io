@@ -1,7 +1,7 @@
 // 
 // index.js | Project | YDITS Official site 
 //
-// (c) 2022-2023 よね/Yone
+// (c) YDITS
 // 
 
 $(() => {

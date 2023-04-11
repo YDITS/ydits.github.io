@@ -9,20 +9,18 @@
 
 -->
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-cn">
 
 <head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="YDITS">
-    <meta name="author" content="よね/Yone">
-    <meta name="generator" content="Microsoft Visual Studio Code">
     <meta name="color-scheme" content="dark">
     <title>YDITS Project</title>
 
     <meta property="og:url" content="https://www.ydits.net/project/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="YDITS公式サイト">
+    <meta property="og:site_name" content="YDITS官网">
     <meta property="og:title" content="YDITS Project">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@yone1130_">
@@ -42,6 +40,7 @@
 
     <script src="./Scripts/jquery-3.6.0.min.js"></script>
     <script src="./Scripts/main.js"></script>
+    <script src="./zh-cn/Scripts/main.js"></script>
     <script src="./project/Scripts/index.js"></script>
     <noscript>
         <meta http-equiv="refresh" content="0; URL=./noscript/">
@@ -59,44 +58,44 @@
         <section id="main">
             <section class="sections" id="des">
                 <p>
-                    YDITS Projectは当サービスの運営を行う団体です。<br>
-                    主な活動はアプリ開発、地震観測/監視配信、防災情報の発信等、色々な活動をしていただけます。
+                    YDITS Project是负责运营这项服务的组织。<br>
+                    你可以开发应用程序，观察/监测地震的分布，传播灾害管理信息和许多其他活动。
                 </p>
             </section>
 
             <section class="sections" id="members">
-                <h2 class="sectionTitle">リンク</h2>
+                <h2 class="sectionTitle">链接</h2>
 
                 <div class="link" id="link_news">
                     <span class="material-symbols-outlined">
                         double_arrow
                     </span>
 
-                    <a href="./project/members/">
-                        メンバーリスト
+                    <a href="./zh-cn/project/members/">
+                        成员名单
                     </a>
                 </div>
             </section>
 
             <section class="sections" id="recruit">
-                <h2 class="sectionTitle">参加募集</h2>
+                <h2 class="sectionTitle">招聘</h2>
 
                 <div id="terms">
                     <input type="checkbox" id="agreeChk">
                     <label>
-                        私は参加申請をするにあたり、<a href="./terms/" target="_blank">YDITS利用規約</a> 、 <a href="./policy"
-                            target="_blank">YDITSプライバシーポリシー</a> 、 <a href="./project/members-terms/">YDITS Project
-                            メンバー特約</a> に同意します。<br>
+                        在申请参与时，我同意 <a href="./en-us/terms/" target="_blank">YDITS使用条款</a> ，<a href="./policy"
+                            target="_blank">YDITS隐私政策</a>  和 <a href="./project/members-terms/">YDITS Project
+                            成员条款</a> 。<br>
                     </label>
                     <input type="checkbox" id="ageChk">
                     <label>
-                        私は15歳以上です。
+                        我已经超过15岁了。
                     </label>
                 </div>
 
-                <button id="sendBtn">申請する</button>
+                <button id="sendBtn">申请</button>
 
-                <span id="error" style="color: #ff4040;">同意していない項目があります</span>
+                <span id="error" style="color: #ff4040;">有一些项目是你不同意的</span>
             </section>
         </section>
     </main>
