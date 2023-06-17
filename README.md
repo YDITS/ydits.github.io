@@ -2,11 +2,12 @@
 # YDITS
 
 ## About
-YDITSのサイトです。  
+
+YDITSのサイトです。
 
 ## Usage Technology
 
-#### Lagages
+#### Lagages / Libraries
 - HTML5/CSS3
 - JavaScript
 - jQuery
