@@ -1,8 +1,7 @@
 
-# YDITS
+# YDITS Site
 
 ## About
-
 YDITSのサイトです。
 
 ## Usage Technology

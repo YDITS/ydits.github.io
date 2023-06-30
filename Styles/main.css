@@ -1,8 +1,8 @@
 /*
 
-    main.css | YDITS Official site
+    main.css | YDITS site
 
-    Copyright (c) YDITS
+    Copyright (c) YDITS, よね/Yone
 
     No modification or reproduction of any kind is permitted.
     改変や複製を一切禁じます。
@@ -90,7 +90,7 @@ header .logo>img {
     border-radius: .2em;
 }
 
-#langSelect { 
+#langSelect {
     display: flex;
     align-items: center;
 }
@@ -178,7 +178,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    #langSelect { 
+    #langSelect {
         margin-right: 4em;
     }
 

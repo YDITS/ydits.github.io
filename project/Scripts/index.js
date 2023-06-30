@@ -1,7 +1,7 @@
 // 
-// index.js | Project | YDITS Official site 
+// index.js | Project | YDITS site 
 //
-// Copyright (c) YDITS
+// Copyright (c) YDITS, よね/Yone
 // 
 
 $(() => {
