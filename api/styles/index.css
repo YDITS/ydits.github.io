@@ -1,0 +1,23 @@
+/*
+
+    index.css | api | YDITS site
+
+    Copyright (c) YDITS, よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+
+main {
+    width: calc(100% - 20vw);
+    padding: 2em 10vw;
+}
+
+#pageTitle {
+    text-align: center;
+}
+
+#apiLinks {
+    padding: 2em 0;
+}

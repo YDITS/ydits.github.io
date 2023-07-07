@@ -1,0 +1,26 @@
+/*
+
+    main.css | api | YDITS site
+
+    Copyright (c) YDITS, よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+
+#path {
+
+}
+
+#path a {
+    color: #20c0a0;
+    margin: .5em;
+}
+
+#path .locate {
+    margin: .5em;
+    padding: .5em .8em;
+    border-radius: 1.7em;
+    background-color: #00000010;
+}
