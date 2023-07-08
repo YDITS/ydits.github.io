@@ -16,8 +16,13 @@ main {
 
 #pageTitle {
     text-align: center;
+    padding-bottom: .5em;
 }
 
 #apiLinks {
     padding: 2em 0;
+}
+
+#apiLinks li {
+    padding: .5em 0;
 }

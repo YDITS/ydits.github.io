@@ -1,0 +1,98 @@
+/*
+
+    ui.css | YDITS site
+
+    Copyright (c) YDITS, よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+@charset "UTF-8";
+
+.pulldownMenu {
+    display: inline-block;
+    border-radius: 2em;
+    background-color: #404040ff;
+    color: #ffffffff;
+    user-select: none;
+}
+
+.pulldownMenu .label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2em;
+    background-color: #202020ff;
+    padding: .1em 1em;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.pulldownMenu .label:hover {
+    background-color: #505050ff;
+}
+
+.pulldownMenu .label:active {
+    background-color: #808080ff;
+}
+
+.pulldownMenu .title {
+    margin-right: 1em;
+}
+
+.pulldownMenu .icon {
+    transition: all .2s;
+    transform: rotate(-90deg);
+}
+
+.pulldownMenu.active .icon {
+    display: inline-block;
+    transform: rotate(0deg);
+}
+
+.pulldownMenu .list.active {
+    display: block;
+}
+
+.pulldownMenu .list {
+    display: none;
+    list-style: none;
+    padding: .5em;
+}
+
+.pulldownMenu.active .list {
+    display: block;
+    overflow: auto;
+    max-height: 32em;
+    animation-name: pulldown;
+    animation-duration: 1s;
+}
+
+@keyframes pulldown {
+    from {
+        opacity: 0;
+        max-height: 0px;
+    }
+
+    to {
+        opacity: 1;
+        max-height: 32em;
+    }
+}
+
+.pulldownMenu .list li {
+    border-radius: 1.5em;
+    padding: .1em 1em;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.pulldownMenu .list li:hover {
+    background-color: #606060ff;
+}
+
+.pulldownMenu .list li:active {
+    background-color: #808080ff;
+}

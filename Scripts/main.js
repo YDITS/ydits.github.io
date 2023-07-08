@@ -14,6 +14,26 @@ const pageLangages = [
     "zh-tw"
 ]
 
+const langChange = (lang) => {
+    let path = location.pathname;
+    let pathArray = path.split("/");
+    let langValue = lang;
+
+    if (pageLangages.includes(pathArray[1])) {
+        if (langValue == "ja-jp") {
+            location.pathname = path.slice(6);
+        } else {
+            location.pathname = langValue + path.slice(6);
+        }
+    } else {
+        if (langValue == "ja-jp") {
+            location.pathname = path;
+        } else {
+            location.pathname = langValue + path;
+        }
+    }
+}
+
 $(() => {
     let isActive_headerLink = false;
 
@@ -27,24 +47,15 @@ $(() => {
 
     $("footer").load("./elements/footer.html");
 
-    $(document).on('change', '#langSelectBox', () => {
-        const langSelectBox = document.getElementById('langSelectBox');
-        let path = location.pathname;
-        let pathArray = path.split("/");
-        let langValue = langSelectBox.value;
+    // Language select
+    const langSelectLabelQuery = '#langSelect .label';
+    $(document).on('click', langSelectLabelQuery, () => {
+        $('#langSelect').toggleClass('active');
 
-        if (pageLangages.includes(pathArray[1])) {
-            if (langValue == "ja-jp") {
-                location.pathname = path.slice(6);
-            } else {
-                location.pathname = langValue + path.slice(6);
-            }
-        } else {
-            if (langValue == "ja-jp") {
-                location.pathname = path;
-            } else {
-                location.pathname = langValue + path;
-            }
-        }
+    });
+    pageLangages.forEach(lang => {
+        $(document).on('click', `#langSelect .${lang}`, () => {
+            langChange(lang);
+        });
     });
 });

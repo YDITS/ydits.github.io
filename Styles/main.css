@@ -90,15 +90,6 @@ header .logo>img {
     border-radius: .2em;
 }
 
-#langSelect {
-    display: flex;
-    align-items: center;
-}
-
-#langSelect span {
-    margin-right: .5rem;
-}
-
 header .btn_link {
     position: fixed;
     top: .5em;
@@ -166,15 +157,41 @@ header nav>ul>li>a {
 }
 
 footer {
+    padding: 2em 5vw;
+    height: 12em;
+    overflow: auto;
+    background-color: #e0e0ff;
+    
+    user-select: none;
+}
+
+footer .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 
-    height: 7em;
-    background-color: #e0e0ff;
+    height: 100%;
+}
 
-    user-select: none;
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerTitle {
+    font-size: 2em;
+}
+
+#lang {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: .5em;
+}
+
+#lang>span {
+    margin-top: .1em;
+    margin-right: .3em;
 }
 
 @media (max-width: 768px) {
