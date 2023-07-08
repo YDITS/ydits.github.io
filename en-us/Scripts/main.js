@@ -11,4 +11,7 @@ $(() => {
     setTimeout(() => {
         $("header").load("./en-us/elements/header.html");
     }, 500);
+    setTimeout(() => {
+        $("footer").load("./en-us/elements/footer.html");
+    }, 500);
 });

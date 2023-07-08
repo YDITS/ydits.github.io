@@ -11,4 +11,7 @@ $(() => {
     setTimeout(() => {
         $("header").load("./zh-cn/elements/header.html");
     }, 500);
+    setTimeout(() => {
+        $("footer").load("./zh-cn/elements/footer.html");
+    }, 500);
 });
