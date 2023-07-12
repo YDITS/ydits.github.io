@@ -32,14 +32,18 @@ body {
 }
 
 a {
-    color: #4040ff;
-    text-decoration: underline;
+    color: #40b080ff;
+    text-decoration: none;
     cursor: pointer;
 }
 
 main {
     width: 100%;
     min-height: 100vh;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 header {

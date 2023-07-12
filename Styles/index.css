@@ -77,12 +77,11 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     font-size: 1.3em;
 }
 
 #main .link a {
-    color: #303030;
+    color: #40b080ff;
     text-decoration: none;
 }
 
