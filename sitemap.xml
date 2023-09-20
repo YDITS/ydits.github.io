@@ -1,23 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://www.ydits.net/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/"/>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/en-us/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/"/>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/zh-cn/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/"/>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/zh-tw/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/"/>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/ko-kr/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/"/>
         <priority>1.0</priority>
     </url>
     <url>
@@ -25,47 +100,296 @@
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://www.ydits.net/api/eew/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://www.ydits.net/color-scheme/</loc>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/news/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/news/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/en-us/news/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/news/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/zh-cn/news/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/news/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/zh-tw/news/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/news/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/ko-kr/news/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/news/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/news/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/web/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/en-us/web/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/zh-cn/web/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/zh-tw/web/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/"/>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.ydits.net/ko-kr/web/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/"/>
         <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.ydits.net/web/versions/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/versions/"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.ydits.net/en-us/web/versions/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/versions/"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.ydits.net/zh-cn/web/versions/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/versions/"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.ydits.net/zh-tw/web/versions/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/versions/"/>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.ydits.net/ko-kr/web/versions/</loc>
+        <xhtml:link rel="alternate"
+                    hreflang="ja-JP"
+                    href="https://www.ydits.net/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="en-US"
+                    href="https://www.ydits.net/en-us/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-CN"
+                    href="https://www.ydits.net/zh-cn/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="zh-TW"
+                    href="https://www.ydits.net/zh-tw/web/versions/"/>
+        <xhtml:link rel="alternate"
+                    hreflang="ko-KR"
+                    href="https://www.ydits.net/ko-kr/web/versions/"/>
+        <priority>0.8</priority>
     </url>
 </urlset>
