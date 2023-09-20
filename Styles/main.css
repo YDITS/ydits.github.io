@@ -171,7 +171,7 @@ header nav>ul>li>a {
 footer {
     /* height: 16em; */
     background-color: #202020ff;
-
+    color: #ffffffff;
     user-select: none;
 }
 
