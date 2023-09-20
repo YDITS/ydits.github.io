@@ -29,7 +29,7 @@ main {
     height: 50vh;
 
     /* padding: 4em 0; */
-    background-color: #303030;
+    background-color: #303030ff;
     color: #eeeeee;
 
     user-select: none;
@@ -52,20 +52,8 @@ main {
     }
 }
 
-#hero span {
-    display: block;
-    text-align: center;
-}
-
-#hero .title {
-    font-size: 3em;
-    animation-name: fadein;
-    animation-duration: 2s;
-}
-
-#hero .des {
-    text-align: center;
-    font-size: 1.7em;
+#hero>.wrapper>img {
+    height: 12em;
 }
 
 #main {
@@ -138,44 +126,21 @@ main {
     align-items: center;
 }
 
-header {
-    background-color: #606060;
-    color: #ffffff;
-}
-
-header .logo {
-    color: #ffffff;
-}
-
-header .btn_link {
-    background-color: #606060;
-}
-
 header nav>ul>li:hover {
     background-color: #ffffff80;
 }
-
 
 header nav>ul>li>a {
     color: #ffffff;
 }
 
-footer {
-    background-color: #606060;
-    color: #ffffff;
-}
-
 @media (max-width: 768px) {
-    header nav {
-        background-color: #303030;
-    }
-
     header nav>ul>li>a {
         color: #010101;
     }
 
-    #hero {
-        font-size: .8em;
+    #hero>.wrapper>img {
+        height: 8em;
     }
 
     #message {

@@ -11,9 +11,10 @@
 @charset "UTF-8";
 
 .pulldownMenu {
+    position: relative;
     display: inline-block;
     border-radius: 2em;
-    background-color: #404040ff;
+    background-color: #303030ff;
     color: #ffffffff;
     user-select: none;
 }
@@ -24,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 2em;
-    background-color: #202020ff;
+    background-color: #303030ff;
     padding: .1em 1em;
     cursor: pointer;
     transition: all .2s;
@@ -49,7 +50,7 @@
 
 .pulldownMenu.active .icon {
     display: inline-block;
-    transform: rotate(0deg);
+    transform: rotate(-180deg);
 }
 
 .pulldownMenu .list.active {
@@ -57,9 +58,17 @@
 }
 
 .pulldownMenu .list {
+    position: absolute;
+    top: auto;
+    bottom: calc(100% + 2em);
     display: none;
-    list-style: none;
+
     padding: .5em;
+    min-width: calc(10em + 1em);
+    border-radius: .5em;
+
+    background-color: #303030ff;
+    list-style: none;
 }
 
 .pulldownMenu.active .list {
