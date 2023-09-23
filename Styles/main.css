@@ -169,7 +169,6 @@ header nav>ul>li>a {
 }
 
 footer {
-    /* height: 16em; */
     background-color: #202020ff;
     color: #ffffffff;
     user-select: none;
@@ -228,7 +227,6 @@ footer .logo>img {
         left: 100%;
 
         width: 100vw;
-        /* height: 100vh; */
 
         overflow: auto;
         background-color: #101010;

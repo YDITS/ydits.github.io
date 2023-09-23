@@ -55,7 +55,6 @@
     padding: 1em 0;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
     #title {
         font-size: 1.2em;
