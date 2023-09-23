@@ -1,8 +1,8 @@
 /*
 
-    main.css | YDITS site
+    main.css | YDITS Site
 
-    Copyright (c) YDITS, よね/Yone
+    (c) YDITS, よね/Yone
 
     No modification or reproduction of any kind is permitted.
     改変や複製を一切禁じます。
@@ -188,7 +188,7 @@ footer .logo {
     text-align: center;
 }
 
-footer .logo>img{
+footer .logo>img {
     height: 6em;
     margin-bottom: 1em;
 }
@@ -219,7 +219,7 @@ footer .logo>img{
     }
 
     header .btn_link span.active {
-        display: flex;
+        display: block;
     }
 
     header nav {
@@ -260,8 +260,8 @@ footer .logo>img{
         background-color: #80808080;
     }
 
-    footer .logo>img{
+    footer .logo>img {
         height: 4em;
     }
-    
+
 }

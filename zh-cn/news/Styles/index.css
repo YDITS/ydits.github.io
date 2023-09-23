@@ -1,43 +1,46 @@
 /* 
 
-  index.css / news / YDITS site
+    index.css | news | YDITS Site
 
-  Copyright (c) YDITS, よね/Yone
+    (c) YDITS, よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
 
 */
 @charset "UTF-8";
 
 #main {
-  padding: 2em 0;
+    padding: 2em 0;
 }
 
 #pageTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  margin: .5em 0;
+    margin: .5em 0;
 }
 
 #newsList {
-  padding: 2em 10vw;
+    padding: 2em 10vw;
 }
 
 #newsList .lists {
-  list-style: none;
+    list-style: none;
 }
 
 #newsList .list {
-  margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 #newsList .list .title {
-  display: block;
-  margin-bottom: .2em;
-  font-size: 1.3em;
+    display: block;
+    margin-bottom: .2em;
+    font-size: 1.3em;
 }
 
 #newsList .list .date {
-  display: block;
-  font-size: 1.1em;
+    display: block;
+    font-size: 1.1em;
 }

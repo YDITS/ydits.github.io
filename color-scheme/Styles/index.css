@@ -1,22 +1,25 @@
 /* 
 
-  index.css / colorScheme / YDITS site
+    index.css | color-scheme | YDITS Site
 
-  Copyright (c) YDITS, よね/Yone
+    (c) YDITS, よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
 
 */
 @charset "UTF-8";
 
 #main {
-  padding: 2em 10vw;
+    padding: 2em 10vw;
 }
 
 #title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  margin: .5em 0;
+    margin: .5em 0;
 }
 
 #content {

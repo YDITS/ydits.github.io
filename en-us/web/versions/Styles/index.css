@@ -1,23 +1,27 @@
 /* 
 
-  index.css | web versions | YDITS site
+    index.css | web versions | YDITS Site
 
-  Copyright (c) YDITS, よね/Yone
+    (c) YDITS, よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
 
 */
+
 #hero .title {
-  text-align: center;
+    text-align: center;
 }
 
 #main {
-  padding: 2em 10vw;
+    padding: 2em 10vw;
 }
 
 .versions {
-  padding: 2em 0;
+    padding: 2em 0;
 }
 
 .versions ul {
-  padding-top: .2em;
-  padding-left: 1.5em;
+    padding-top: .2em;
+    padding-left: 1.5em;
 }
