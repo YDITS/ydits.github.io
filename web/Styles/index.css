@@ -48,15 +48,6 @@
     font-size: 1.3em;
 }
 
-#main .link a {
-    color: #303030;
-    text-decoration: none;
-}
-
-#main .link a:hover {
-    text-decoration: underline;
-}
-
 #main .sections {
     padding: 2em 0;
 }
