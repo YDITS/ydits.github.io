@@ -10,13 +10,12 @@
 */
 @charset "UTF-8";
 
-body {
-    background-color: #ffffff;
-    color: #ffffff;
+header {
+    /* background-color: #202030ff; */
 }
 
-main {
-    background-color: #eeeeee;
+.mobileBreakline {
+    display: none;
 }
 
 #hero {
@@ -26,7 +25,7 @@ main {
     align-items: center;
 
     min-height: 16em;
-    height: 50vh;
+    height: calc(80vh - var(--header-height));
 
     background-color: #303030ff;
     color: #eeeeee;
@@ -35,6 +34,8 @@ main {
 }
 
 #hero .wrapper {
+    position: relative;
+    bottom: calc(var(--header-height) / 2);
     animation-name: fadein;
     animation-duration: 1.5s;
 }
@@ -52,12 +53,25 @@ main {
 }
 
 #hero>.wrapper>img {
-    height: 12em;
+    height: 16em;
+}
+
+#hero>.expand-button {
+    position: absolute;
+    bottom: 2em;
+
+    padding: 1em;
+    /* background-color: #80808080; */
+    font-size: 1em;
+}
+
+#hero>.expand-button>span {
+    font-size: 3em;
+    color: #ffffffff;
 }
 
 #main {
     min-height: 50vh;
-    color: #010101;
 }
 
 #main .link {
@@ -67,31 +81,50 @@ main {
     font-size: 1.3em;
 }
 
-#main .link a {
-    color: #40b080ff;
-    text-decoration: none;
-}
-
-#main .link a:hover {
-    text-decoration: underline;
-}
-
 #main .sections {
-    padding: 2em 0;
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
 #main .sectionTitle {
-    margin: .5em 0;
-}
-
-#message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    margin-bottom: 2em;
+    font-size: 2em;
     text-align: center;
-    font-size: 1.2em;
 }
+
+#main .sectionTitle::after {
+    display: block;
+    width: 1em;
+    height: 4px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-color: #808080ff;
+    content: "";
+}
+
+#about {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+    /* text-align: center; */
+}
+
+#about>.content>.content {
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.aboutTitle {
+    font-size: 3em;
+    margin-top: 1rem;
+    margin-bottom: .5em;
+}
+
 
 #link_news {
     display: flex;
@@ -101,10 +134,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#link_news {
-    display: flex;
 }
 
 #apps {
@@ -142,7 +171,11 @@ header nav>ul>li>a {
         height: 8em;
     }
 
-    #message {
+    #about {
         font-size: 1em;
+    }
+
+    .mobileBreakline {
+        display: block;
     }
 }
