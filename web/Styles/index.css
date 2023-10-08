@@ -10,8 +10,8 @@
 */
 @charset "UTF-8";
 
-#main {
-    padding: 2em 0;
+:root {
+    --hero-background-color: linear-gradient(90deg,#202080ff 10%,#802060ff 100%);
 }
 
 #pageTitle {
@@ -22,22 +22,34 @@
     margin: .5em 0;
 }
 
+header {
+    /* background-color: #202060ff; */
+    background: var(--hero-background-color);
+
+}
+
 #hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    height: 30vh;
-
-    background-color: #cccccc;
+    height: calc(80vh - var(--header-height));
+    min-height: 20em;
+    background: var(--hero-background-color);
+    background-size: cover;
     color: #010101;
 
     user-select: none;
 }
 
 #hero .title {
-    font-size: 2em;
+    position: relative;
+    bottom: calc(var(--header-height) / 2);  /* ヘッダーを含めた、ヒーロヘッダ全体の高さの中央位置 */
+    /* display: block; */
+    font-size: clamp(1rem, calc(80vw / 8), 4rem);
+    font-family: 'Zen Antique Soft', serif;
+    color: #ffffffff;
 }
 
 #main .link {
@@ -49,11 +61,25 @@
 }
 
 #main .sections {
-    padding: 2em 0;
+    padding: 4rem 0;
 }
 
 #main .sectionTitle {
-    margin: .5em 0;
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#main .sectionTitle::after {
+    display: block;
+    width: 1em;
+    height: 4px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-color: #808080ff;
+    content: "";
 }
 
 #message {

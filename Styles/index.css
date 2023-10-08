@@ -34,8 +34,6 @@ header {
 }
 
 #hero .wrapper {
-    position: relative;
-    bottom: calc(var(--header-height) / 2);
     animation-name: fadein;
     animation-duration: 1.5s;
 }
@@ -54,20 +52,6 @@ header {
 
 #hero>.wrapper>img {
     height: 16em;
-}
-
-#hero>.expand-button {
-    position: absolute;
-    bottom: 2em;
-
-    padding: 1em;
-    /* background-color: #80808080; */
-    font-size: 1em;
-}
-
-#hero>.expand-button>span {
-    font-size: 3em;
-    color: #ffffffff;
 }
 
 #main {
