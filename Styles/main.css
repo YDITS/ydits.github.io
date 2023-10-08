@@ -289,6 +289,10 @@ footer .logo>img {
         background-color: #80808080;
     }
 
+    header nav>ul>li>a {
+        color: #202020ff;
+    }
+
     footer .logo>img {
         height: 4em;
     }
