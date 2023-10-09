@@ -23,9 +23,23 @@
 }
 
 header {
-    /* background-color: #202060ff; */
-    background: var(--hero-background-color);
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 2rem);
+    border-radius: calc(var(--header-height) / 2);
 
+    background-color: #202020c0;
+    box-shadow: none;
+}
+
+header .logo {
+    margin-left: 2rem;
+    height: 80%;
+    border-radius: .5em;
+}
+
+main {
+    margin-top: 0;
 }
 
 #hero {
@@ -45,8 +59,6 @@ header {
 
 #hero .title {
     position: relative;
-    bottom: calc(var(--header-height) / 2);  /* ヘッダーを含めた、ヒーロヘッダ全体の高さの中央位置 */
-    /* display: block; */
     font-size: clamp(1rem, calc(80vw / 8), 4rem);
     font-family: 'Zen Antique Soft', serif;
     color: #ffffffff;

@@ -11,7 +11,12 @@
 @charset "UTF-8";
 
 :root {
-    --header-height: 3rem;
+    --header-height: 3.5rem;
+    --html-font-size: 14px;
+    --body-background-color: #ffffffff;
+    --body-font-weight: 400;
+    --body-font-family: 'Noto Sans JP', sans-serif;
+    --body-color: #202020ff;
 }
 
 * {
@@ -20,15 +25,15 @@
 }
 
 html {
+    font-size: var(--html-font-size);
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #ffffffff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #202020ff;
+    background-color: var(--body-background-color);
+    font-weight: var(--body-font-weight);
+    font-family: var(--body-font-family);
+    color: var(--body-color);
 }
 
 .material-symbols-outlined {
@@ -41,12 +46,13 @@ body {
 
 a.link-button {
     display: inline-block;
-    padding: 1em 1.5em;
-    border-radius: 2em;
+    border-radius: calc((2rem + 24px) / 2);
+    padding: 1rem 1.5rem;
     background-color: #404040ff;
+    font-size: 1rem;
     color: #ffffffff;
     text-decoration: none;
-    font-size: 1rem;
+
     transition: all .5s;
     user-select: none;
 }
@@ -72,12 +78,12 @@ a.link-inline:hover {
     text-decoration: underline;
 }
 
-main {
-    width: 100%;
-    min-height: 100vh;
-}
-
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,8 +91,7 @@ header {
 
     width: 100%;
     height: var(--header-height);
-
-    box-shadow: #f0f0f0f0 0 0 6px 6px;
+    box-shadow: #80808080 0px 0px 2px 2px;
 
     background-color: #202020ff;
     color: #ffffff;
@@ -105,32 +110,31 @@ header>.content {
     max-width: 1024px;
 }
 
-header .logo {
+#headerLogo {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    margin-left: 1em;
+    margin-left: 1rem;
     height: 100%;
 
-    padding: 0 1em;
-    color: #010101;
+    padding: 0 1rem;
     text-decoration: none;
 }
 
-header .logo:hover {
-    background-color: #ffffff60;
+#headerLogo:hover {
+    background-color: #ffffff40;
 }
 
-header .logo>img {
-    height: 2em;
-    border-radius: .2em;
+#headerLogo>img {
+    height: 2rem;
 }
 
-header .btn_link {
+#headerMenuButton {
     position: fixed;
     bottom: 2em;
     right: 2em;
+
     display: none;
     align-items: center;
     justify-content: center;
@@ -148,13 +152,24 @@ header .btn_link {
     user-select: none;
 }
 
-header .btn_link span {
-    display: none;
+#headerMenuButton span {
     font-size: 2em;
     color: #010101;
 }
 
-header nav {
+#headerMenuButton>.close {
+    display: none;
+}
+
+#headerMenuButton.opened>.open {
+    display: none;
+}
+
+#headerMenuButton.opened>.close {
+    display: block;
+}
+
+#headerMenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +178,7 @@ header nav {
     height: 100%;
 }
 
-header nav>ul {
+#headerMenu>ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,7 +199,7 @@ header nav>ul>li {
 }
 
 header nav>ul>li:hover {
-    background-color: #ffffff60;
+    background-color: #ffffff40;
 }
 
 header nav>ul>li>a {
@@ -199,6 +214,11 @@ header nav>ul>li>a {
     text-decoration: none;
 }
 
+main {
+    margin-top: var(--header-height);
+    min-height: 100vh;
+}
+
 footer {
     background-color: #202020ff;
     color: #ffffffff;
@@ -210,17 +230,24 @@ footer .content {
     flex-direction: column;
     align-items: center;
 
+    width: 100%;
     height: 100%;
 }
 
 footer .logo {
-    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
     text-align: center;
 }
 
 footer .logo>img {
-    height: 6em;
-    margin-bottom: 1em;
+    height: 6rem;
+    margin-bottom: 2rem;
 }
 
 #lang {
@@ -244,15 +271,11 @@ footer .logo>img {
 }
 
 @media (max-width: 768px) {
-    header .btn_link {
+    #headerMenuButton {
         display: flex;
     }
 
-    header .btn_link span.active {
-        display: block;
-    }
-
-    header nav {
+    #headerMenu {
         position: fixed;
         top: 0;
         left: 100%;
@@ -266,18 +289,17 @@ footer .logo>img {
         transition: all .3s;
     }
 
-    header nav.active {
+    #headerMenu.active {
         left: 0%;
         display: flex;
     }
 
-    header nav>ul {
+    #headerMenu>ul {
         flex-direction: column;
-        align-items: center;
         margin-top: 7em;
     }
 
-    header nav>ul>li {
+    #headerMenu>ul>li {
         margin-bottom: 2em;
         width: 80%;
         height: 3em;
@@ -285,11 +307,11 @@ footer .logo>img {
         background-color: #ffffff;
     }
 
-    header nav>ul>li:hover {
+    #headerMenu>ul>li:hover {
         background-color: #80808080;
     }
 
-    header nav>ul>li>a {
+    #headerMenu>ul>li>a {
         color: #202020ff;
     }
 

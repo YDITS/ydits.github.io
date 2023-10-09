@@ -42,10 +42,9 @@ $(() => {
 
     $("header").load("./elements/header.html");
 
-    $(document).on('click', 'header .btn_link', () => {
-        $('header .btn_link>.close').toggleClass('active');
-        $('header .btn_link>.open').toggleClass('active');
-        $('header nav').toggleClass('active');
+    $(document).on('click', '#headerMenuButton', () => {
+        $('#headerMenuButton').toggleClass('opened');
+        $('#headerMenu').toggleClass('active');
     });
 
     $("footer").load("./elements/footer.html");
