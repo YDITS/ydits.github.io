@@ -25,7 +25,12 @@
 header {
     top: 1rem;
     left: 1rem;
+    right: 1rem;
+
+    margin-left: auto;
+    margin-right: auto;
     width: calc(100% - 2rem);
+    max-width: 1024px;
     border-radius: calc(var(--header-height) / 2);
 
     background-color: #202020c0;
