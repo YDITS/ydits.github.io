@@ -60,4 +60,31 @@ $(() => {
             langChange(lang);
         });
     });
+
+
+    $("main").prepend(`
+        <a id="notice" href="./news/2024/01/0201/">
+            <div class="wrapper">
+                <p>能登半島地震についての情報</p>
+                <span class="material-symbols-outlined">
+                    double_arrow
+                </span>
+            </div>
+        </a>
+    `)
+    $("#notice").css({
+        "display": "block",
+        "padding": ".5em",
+        "background-color": "#d04020ff",
+        "user-select": "none",
+        "text-decoration": "none"
+    });
+    $("#notice>.wrapper").css({
+        "display": "flex",
+        "align-items": "center",
+        "width": "calc(100% - 2em)",
+        "padding": "1em",
+        "background-color": "#f06040ff",
+        "color": "#ffffffff",
+    });
 });
