@@ -1,0 +1,26 @@
+/* 
+
+    index.css | apps/web/versions | YDITS Site
+
+    (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+#hero .title {
+    text-align: center;
+}
+
+#main {
+    padding: 2em 10vw;
+}
+
+.versions {
+    padding: 2em 0;
+}
+
+.versions ul {
+    padding-top: .2em;
+    padding-left: 1.5em;
+}
