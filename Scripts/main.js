@@ -63,9 +63,9 @@ $(() => {
 
 
     $("main").prepend(`
-        <a id="notice" href="./news/2024/01/0201/">
+        <a id="notice" href="./news/2024/01/0701/">
             <div class="wrapper">
-                <p>能登半島地震についての情報</p>
+                <p>能登半島地震についての情報（1月7日）</p>
                 <span class="material-symbols-outlined">
                     double_arrow
                 </span>
