@@ -11,7 +11,7 @@
 @charset "UTF-8";
 
 :root {
-    --hero-background-color: linear-gradient(90deg,#202080ff 10%,#802060ff 100%);
+    --hero-background-color: linear-gradient(90deg, #202080ff 10%, #802060ff 100%);
 }
 
 #pageTitle {

@@ -9,10 +9,10 @@ YDITSのウェブサイトです。
 #### Lagages / Libraries
 - HTML5/CSS3
 - JavaScript
-- jQuery
+- jQuery v3.6.0
 
 #### Build & Deploy
 - Cloudflare Pages
 
 ## LICENCE
-**ライセンスは置いておらず、改変は一切禁止しています。**
+**No licensed. No modification or reproduction of any kind is permitted.**
