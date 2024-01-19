@@ -20,7 +20,7 @@
     <meta name="keywords" content="YDITS">
     <meta name="author" content="よね/Yone">
     <meta name="generator" content="Microsoft Visual Studio Code">
-    <title>バージョン履歴 - YDITS for Web - YDITS公式サイト</title>
+    <title>版本歷史 - YDITS for Web - YDITS公式サイト</title>
 
     <meta name="color-scheme" content="dark">
 
@@ -67,15 +67,6 @@
     <link rel="apple-touch-icon" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
 
     <!----- Scripts ----->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFN4DKGM3F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-DFN4DKGM3F');
-    </script>
-
     <script src="./Scripts/jquery-3.6.0.min.js"></script>
     <script src="./Scripts/common.js"></script>
 
@@ -93,6 +84,26 @@
         </section>
 
         <section id="main">
+            <section class="versions">
+                <h2>Ver 3.11.0</h2>
+                <ul>
+                    <li>P2P地震情報をWebSocket接続に変更しました。</li>
+                    <li>WebSocket接続により、地震情報の取得速度が大幅に向上しました。</li>
+                    <li>緊急地震速報（警報）の受信時に、対象地域が表示されるようにしました。</li>
+                    <li>現在地が警報対象地域の場合は、警報画面に現在地の推定震度と主要動到達予想時刻が表示されるようにしました。</li>
+                    <li>地震履歴の表示件数を増やしました。</li>
+                    <li>その他多くの変更と、修正、改善を行いました。</li>
+                </ul>
+            </section>
+
+            <section class="versions">
+                <h2>Ver 3.10.0</h2>
+                <ul>
+                    <li>同時複数の緊急地震速報に対応しました。</li>
+                    <li>警報音の鳴動を震度5弱以上に変更しました。</li>
+                </ul>
+            </section>
+
             <section class="versions">
                 <h2>Ver 3.9.0</h2>
                 <ul>
