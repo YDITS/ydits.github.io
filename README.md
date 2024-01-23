@@ -1,18 +1,16 @@
 
 # YDITS Website
 
-## About
+## Overview
+
 YDITSのウェブサイトです。
 
-## Usage Technology
+## Usage
 
-#### Lagages / Libraries
-- HTML5/CSS3
-- JavaScript
-- jQuery v3.6.0
-
-#### Build & Deploy
-- Cloudflare Pages
+`src/pages/` をデプロイします。
 
 ## LICENCE
+
 **No licensed. No modification or reproduction of any kind is permitted.**
+
+Copyright (c) よね/Yone
