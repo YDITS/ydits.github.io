@@ -1,0 +1,58 @@
+/* 
+
+    YDITS Site
+
+    Copyright (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+@charset "UTF-8";
+
+#main {
+    padding: 2em 10vw;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: .5em 0;
+}
+
+#content {
+    padding: 2em 0;
+}
+
+#content .text {
+    padding: 1em 0;
+}
+
+#content h2 {
+    font-size: 1.2em;
+}
+
+#g {
+    display: block;
+    padding-bottom: 2em;
+}
+
+#content ol {
+    list-style: none;
+}
+
+#icon {
+    display: block;
+    margin: 2em 0;
+}
+
+#exp {
+    display: block;
+    margin: 2em 0;
+}
+
+#expImg {
+    width: 100%;
+}
