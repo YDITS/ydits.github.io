@@ -1,6 +1,6 @@
 /*
  *
- * common.js | YDITS Site
+ * YDITS Website
  *
  * Copyright (c) よね/Yone
  *
@@ -8,6 +8,8 @@
  * 改変や複製を一切禁じます。
  *
  */
+
+(() => {
 
 const pageLangages = [
     "ja-jp",
@@ -61,3 +63,5 @@ $(() => {
         });
     });
 });
+
+})();
