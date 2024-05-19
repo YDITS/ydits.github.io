@@ -62,7 +62,7 @@ const langChange = (lang) => {
 $(() => {
     let isActive_headerLink = false;
 
-    document.getElementByTagName("header")[0].innerHTML = headerInnerHtml;
+    document.getElementsByTagName("header")[0].innerHTML = headerInnerHtml;
 
     $(document).on('click', '#headerMenuButton', () => {
         $('#headerMenuButton').toggleClass('opened');
