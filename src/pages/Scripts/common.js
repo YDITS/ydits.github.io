@@ -19,6 +19,26 @@ const pageLangages = [
     "ko-kr"
 ]
 
+const headerInnerHtml = `
+<div class="content">
+    <a id="headerLogo" href="./">
+        <img src="https://cdn.ydits.net/images/ydits_logos/ydits_logo_white_transparent.png" alt="YDITS icon">
+    </a>
+
+    <div id="headerMenuButton">
+        <span class="material-symbols-outlined open">menu</span>
+        <span class="material-symbols-outlined close">close</span>
+    </div>
+
+    <nav id="headerMenu">
+        <ul>
+            <li><a href="./">ホーム</a></li>
+            <li><a href="https://www.yoneyo.com/#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</div>
+`;
+
 const langChange = (lang) => {
     let path = location.pathname;
     let pathArray = path.split("/");
@@ -42,7 +62,7 @@ const langChange = (lang) => {
 $(() => {
     let isActive_headerLink = false;
 
-    $("header").load("./elements/header.html");
+    document.getElementByTagName("header")[0].innerHTML = headerInnerHtml;
 
     $(document).on('click', '#headerMenuButton', () => {
         $('#headerMenuButton').toggleClass('opened');
