@@ -10,10 +10,6 @@
 */
 @charset "UTF-8";
 
-header {
-    /* background-color: #202030ff; */
-}
-
 .mobileBreakline {
     display: none;
 }
@@ -21,11 +17,9 @@ header {
 #hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    min-height: 16em;
-    height: calc(80vh - var(--header-height));
+    height: fit-content;
+    overflow: hidden;
 
     background-color: #303030ff;
     color: #eeeeee;
@@ -51,7 +45,7 @@ header {
 }
 
 #hero>.wrapper>img {
-    height: 16em;
+    width: 100%;
 }
 
 #main {
@@ -152,7 +146,7 @@ header nav>ul>li>a {
     }
 
     #hero>.wrapper>img {
-        height: 8em;
+        width: 170%;
     }
 
     #about {
