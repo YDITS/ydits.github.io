@@ -18,23 +18,27 @@ a:hover {
     text-decoration: underline;
 }
 
-#path a {
+.path a {
     color: #20c0a0;
     margin: .5em;
 }
 
-#path .locate {
+.path .locate {
     margin: .5em;
     border-radius: 1.7em;
     padding: .5em .8em;
     background-color: #00000010;
 }
 
-#path .locate:hover {
+.path .locate:hover {
     background-color: #00000020;
     user-select: none;
 }
 
-#path .locate:active {
+.path .locate:active {
     background-color: #00000040;
+}
+
+.section {
+    margin: 2rem 0;
 }

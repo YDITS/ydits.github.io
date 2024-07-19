@@ -19,14 +19,6 @@ main {
     text-align: center;
 }
 
-#apiLinks {
-    padding: 2em 0;
-}
-
-#schemas {
-    padding: 2em 0;
-}
-
 #schemasDescription {
     display: none;
     margin-bottom: 1em;
