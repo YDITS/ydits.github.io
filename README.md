@@ -1,16 +1,17 @@
-
 # YDITS Website
+
+[→ 日本語](./README_JP.md)
 
 ## Overview
 
-YDITSのウェブサイトです。
+YDITS website.
 
 ## Usage
 
-`src/pages/` をデプロイします。
+Deploy directory `src/pages/`.
 
 ## LICENCE
 
-**No licensed. No modification or reproduction of any kind is permitted.**
+No Licensed
 
-Copyright (c) よね/Yone
+Copyright (C) よね/Yone
