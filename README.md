@@ -10,8 +10,8 @@ YDITS website.
 
 Deploy directory `src/pages/`.
 
-## LICENCE
+## License
 
-No Licensed
+No licensed.
 
 Copyright (C) よね/Yone
