@@ -10,6 +10,8 @@ YDITS website.
 
 Deploy directory `src/pages/`.
 
+Published at https://www.ydits.net/ .
+
 ## License
 
 No licensed.
