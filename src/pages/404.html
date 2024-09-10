@@ -28,8 +28,6 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@YDITS_JP">
 
-    <base href="https://www.ydits.net/">
-
     <link rel="icon" type="image/png" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
     <link rel="apple-touch-icon" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
@@ -40,9 +38,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="./Styles/main.css">
-    <link rel="stylesheet" href="./Styles/ui.css">
-    <link rel="stylesheet" href="./Styles/error.css">
+    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="/Styles/ui.css">
+    <link rel="stylesheet" href="/Styles/error.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFN4DKGM3F"></script>
     <script>
@@ -53,33 +51,28 @@
         gtag('config', 'G-DFN4DKGM3F');
     </script>
 
-    <script src="./Scripts/jquery-3.6.0.min.js"></script>
-    <script src="./Scripts/common.js"></script>
+    <script src="/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="/Scripts/common.js"></script>
     <noscript>
-        <meta http-equiv="refresh" content="0; URL=./noscript/">
+        <meta http-equiv="refresh" content="0; URL=/noscript/">
     </noscript>
 </head>
 
 <body>
     <header></header>
 
-    <main>
-        <section id="main">
-            <h1>404 Not found</h1>
-            <a href="./">トップページへ戻る | Go back to Top page</a>
+    <main class="error">
+        <h1 class="error__title">404 Not Found</h1>
+        <p class="error__description">リクエストされたページが見つかりません。</p>
 
-            <div style="margin: 1em 0; border-radius: .5em; padding: 1em 2em; background-color: #e0e0ff;">
-                <div>
-                    <p>
-                        指定されたページが見つかりません。
-                    </p>
-                    <ul>
-                        <li>URLにタイプミスが無いか確認してください。</li>
-                        <li>指定した言語では、まだ利用できないページである可能性があります。</li>
-                    </ul>
-                </div>
+        <a class="link link-button error__button error__link" href="/">
+            <div class="wrapper">
+                トップページへ戻る
+                <span class="material-symbols-outlined">
+                    double_arrow
+                </span>
             </div>
-        </section>
+        </a>
     </main>
 
     <footer></footer>

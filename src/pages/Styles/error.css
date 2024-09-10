@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 
     YDITS Site
@@ -8,20 +10,17 @@
     改変や複製を一切禁じます。
 
 */
-@charset "UTF-8";
 
-#main {
+.error {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding: 2em 0;
+    justify-content: center;
+    gap: 2rem;
 }
 
-#main h1 {
-    margin: .5em 0;
-}
-
-#main p {
-    margin: .5em 0;
+.error__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
 }

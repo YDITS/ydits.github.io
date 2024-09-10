@@ -226,7 +226,7 @@ header nav>ul>li>a {
 
 main {
     margin-top: var(--header-height);
-    min-height: 100vh;
+    min-height: calc(100vh - var(--header-height) * 2);
 }
 
 footer {
