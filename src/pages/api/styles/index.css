@@ -10,20 +10,36 @@
 
 */
 
-main {
-    width: calc(100% - 20vw);
-    padding: 2em 10vw;
-}
-
 #pageTitle {
     text-align: center;
-    padding-bottom: .5em;
 }
 
-#apiLinks {
-    padding: 2em 0;
+.links {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-#apiLinks li {
-    padding: .5em 0;
+.links__ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.links__li {
+    /* border: solid 1px #c0c0c0; */
+    box-shadow: 0 0 8px #00000030;
+    border-radius: 1rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.links__title {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .links__ul {
+        grid-template-columns: 1fr;
+    }
 }

@@ -37,7 +37,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="/Styles/main.css">
@@ -65,38 +65,86 @@
     <header></header>
 
     <main>
-        <h1 id="pageTitle">YDITS API</h1>
-
-        <section id="pathSection" class="section path-section">
-            <span id="path" class="path"><span class="locate">YDITS API</span></span>
+        <section id="path" class="section path">
+            <span class="path__locate">
+                YDITS API
+            </span>
         </section>
 
-        <section class="section api-description">
-            <p>
+        <section class="section hero">
+            <h1 id="pageTitle" class="hero__title">
+                YDITS API
+            </h1>
+
+            <section class="hero__description">
+                <p class="hero__p">
+                    YDITS が提供する防災情報API
+                </p>
+            </section>
+        </section>
+
+        <section class="section notice">
+            <p class="notice_p">
                 このAPIは現在開発段階です。いくつかのプロパティが不足しています。<br>
-                現在利用できるエンドポイントは『緊急地震速報』のみです。
+                現在利用できるエンドポイントは『緊急地震速報（警報）』のみです。
             </p>
         </section>
 
-        <nav id="apiLinks" class="section api-links-section">
-            <ul>
-                <li>
-                    <div>緊急地震速報</div>
-                    <a href="./eew/">Earthquake Early Warning (EEW) API</a>
+        <nav id="apiLinks" class="section links">
+            <ul class="links__ul">
+                <li class="links__li">
+                    <a href="./vxse43/" class="links__title">
+                        緊急地震速報（警報） →
+                    </a>
+
+                    <div class="links__text">
+                        Earthquake Early Warning (EEW) - Warning
+                    </div>
                 </li>
 
-                <li>
-                    <div>地震情報</div>
-                    <a href="./eqinfo/">Earhquake Information (eqinfo) API</a>
+                <li class="links__li">
+                    <a href="./vxse45/" class="links__title">
+                        緊急地震速報（地震動予報） →
+                    </a>
+
+                    <div class="links__text">
+                        Earthquake Early Warning (EEW) - Forecast
+                    </div>
+                </li>
+
+                <li class="links__li">
+                    <a href="./eqinfo/" class="links__title">
+                        地震情報 →
+                    </a>
+
+                    <div class="links__text">
+                        Earhquake Information (eqinfo)
+                    </div>
+                </li>
+
+                <li class="links__li">
+                    <a href="./eqinfo/" class="links__title">
+                        津波情報 →
+                    </a>
+
+                    <div class="links__text">
+                        Tsunami Information
+                    </div>
                 </li>
             </ul>
         </nav>
 
-        <img
-            style="width: 100%;"
-            src="https://cdn.ydits.net/images/ydits_api/ydits_api_rooting_map.svg"
-            alt="YDITS API rooting map image."
-            srcset="">
+        <section class="section map" style="text-align: center;">
+            <img style="width: 100%; max-width: 769px; text-align: center;"
+                src="https://cdn.ydits.net/images/ydits_api/ydits_api_rooting_map.svg"
+                alt="YDITS API rooting map image." srcset="">
+
+            <p style="text-align: left; line-height: 1.5rem;">
+                サーバー１: 自宅サーバー (Node.js)<br>
+                サーバー２: Cloudflare Workers <br>
+                サーバー３: 自宅サーバー (ASP.NET Core)<br>
+            </p>
+        </section>
     </main>
 
     <footer></footer>
