@@ -30,8 +30,6 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@YDITS_JP">
 
-    <base href="https://www.ydits.net/">
-
     <link rel="icon" type="image/png" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
     <link rel="apple-touch-icon" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
@@ -42,10 +40,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="./Styles/main.css">
-    <link rel="stylesheet" href="./Styles/ui.css">
-    <link rel="stylesheet" href="./api/styles/main.css">
-    <link rel="stylesheet" href="./api/eew/styles/index.css">
+    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="/Styles/ui.css">
+    <link rel="stylesheet" href="/api/styles/main.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFN4DKGM3F"></script>
     <script>
@@ -56,10 +54,10 @@
         gtag('config', 'G-DFN4DKGM3F');
     </script>
 
-    <script src="./Scripts/jquery-3.6.0.min.js"></script>
-    <script src="./Scripts/common.js"></script>
+    <script src="/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="/Scripts/common.js"></script>
     <noscript>
-        <meta http-equiv="refresh" content="0; URL=./noscript/">
+        <meta http-equiv="refresh" content="0; URL=/noscript/">
     </noscript>
 </head>
 
@@ -68,7 +66,7 @@
 
     <main>
         <h1 id="pageTitle">Earthquake Early Warning (EEW)</h1>
-        <span id="path"><a href="./api/">YDITS API</a> &gt; <span class="locate">EEW</span></span>
+        <span id="path"><a href="/api/">YDITS API</a> &gt; <span class="locate">EEW</span></span>
 
         <nav id="apiLinks" class="section">
             <ul>
@@ -144,7 +142,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="./api/eew/#schemaReport">report</a></td>
+                            <td><a href="#schemaReport">report</a></td>
                             <td>
                                 <code>status</code> が <code>OK</code> であれば出現
                             </td>
@@ -218,7 +216,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="./api/eew/#schemaEarthquake">earthquake</a></td>
+                            <td><a href="#schemaEarthquake">earthquake</a></td>
                             <td>
                                 <code>isCanceled</code> が <code>true</code> のときは出現しない
                             </td>
