@@ -54,7 +54,7 @@
     <!-- main -->
     <link rel="stylesheet" href="./Styles/main.css">
     <link rel="stylesheet" href="./Styles/ui.css">
-    <link rel="stylesheet" href="./web/Styles/index.css">
+    <link rel="stylesheet" href="./apps/web/Styles/index.css">
 
     <!--- icon --->
     <link rel="icon" type="image/png" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
@@ -74,23 +74,65 @@
     <header></header>
 
     <main>
-        <section id="hero">
-            <div class="title">YDITS for Web</div>
+        <section id="hero" class="section">
+            <div>
+                <h1 class="title title-border-bottom">YDITS for Web</h1>
+                <p class="description">방재 정보를 어디서든 신속하게</p>
+            </div>
+            <div class="scroll-guide-line"></div>
         </section>
 
-        <section id="main">
-            <section class="sections" id="message">
-                <p>
-                    YDITS for Web은 웹 브라우저 상에서<br>
-                    긴급 지진 속보 및 지진 정보를 확인할 수 있는 사이트입니다.
-                </p>
+        <section id="main" class="section">
+            <section id="description" class="section section-flex sections">
+                <h2 class="section-title sectionTitle">방재 정보를 빠르게 확인</h2>
+
+                <div class="section-content">
+                    <p>
+                        현재 발표된 긴급 지진 속보, 현재 위치의 예상 진도와 S파 도달 카운트다운*, 최근 지진 정보 기록, 태풍의 예상 경로도, 비구름 레이더를 표시합니다. 웹 애플리케이션이므로 설치 없이, 어디서든 빠르게 방재 정보를 확인할 수 있습니다.
+                    </p>
+
+                    <p>
+                        방재 정보를 신속하게 전달하기 위해, 본 앱 내에서는 광고를 일체 게재하지 않습니다.
+                    </p>
+
+                    <p>
+                        *현재 위치의 지역 예보 구역 구역이 경보 대상일 때 표시됩니다. 위치 정보 사용을 허용해야 합니다.<br>
+                        *표시되는 예상 진도와 주요 동 도달 예상 카운트다운은, 현재 위치의 지역 예보 구역 구역에 발표된 정보입니다.
+                    </p>
+                </div>
             </section>
 
-            <section class="sections" id="versions">
-                <h2 class="sectionTitle">버전 기록</h2>
+            <section id="description" class="section section-flex sections">
+                <h2 class="section-title sectionTitle">흔들림에 대비한 지원</h2>
 
-                <div class="link">
-                    <a class="link-button" href="./ko-kr/web/versions/">
+                <div class="section-content">
+                    <p>
+                        앱을 실행하는 동안에는, 긴급 지진 속보나 지진 정보 발표 시 음성으로 알려드립니다.
+                        현재 위치의 지역 예보 구역 구역이 긴급 지진 속보(경보) 대상일 경우에는 팝업으로도 알려드려, 흔들림에 대비할 수 있도록 지원합니다.
+                    </p>
+                </div>
+            </section>
+
+            <section id="use" class="sections">
+                <h2 class="section-title sectionTitle">지금 바로 사용해보기</h2>
+
+                <div class="section-content link">
+                    <a class="link-button" href="https://webapp.ydits.net/">
+                        <div class="wrapper">
+                            YDITS for Web 열기
+                            <span class="material-symbols-outlined">
+                                double_arrow
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section sections" id="versions">
+                <h2 class="section-title sectionTitle">버전 기록</h2>
+
+                <div class="section-content link">
+                    <a class="link-button" href="./en-us/apps/web/versions/">
                         <div class="wrapper">
                             버전 기록
                             <span class="material-symbols-outlined">
@@ -101,18 +143,12 @@
                 </div>
             </section>
 
-            <section class="sections" id="use">
-                <h2 class="sectionTitle">지금 바로 이용하실 수 있습니다.</h2>
 
-                <div class="link">
-                    <a class="link-button" href="https://webapp.ydits.net/">
-                        <div class="wrapper">
-                            YDITS for Web
-                            <span class="material-symbols-outlined">
-                                double_arrow
-                            </span>
-                        </div>
-                    </a>
+            <section class="section sections">
+                <h2 class="section-title sectionTitle">동영상 스트리밍에서의 이용에 대하여</h2>
+
+                <div class="section-content">
+                    <p>영리·비영리, 개인·법인을 불문하고, 동영상 스트리밍으로 이용하실 수 있습니다.</p>
                 </div>
             </section>
         </section>
