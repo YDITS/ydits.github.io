@@ -63,23 +63,18 @@
 <body>
     <header></header>
 
-    <main>
-        <section id="main">
-            <h1>404 Not found</h1>
-            <a href="./">첫 페이지로 돌아가기</a>
+    <main class="error">
+        <h1 class="error__title">404 Not Found</h1>
+        <p class="error__description">요청하신 페이지를 찾을 수 없습니다.</p>
 
-            <div style="margin: 1em 0; border-radius: .5em; padding: 1em 2em; background-color: #e0e0ff;">
-                <div>
-                    <p>
-                        요청하신 페이지를 찾을 수 없습니다.
-                    </p>
-                    <ul>
-                        <li>URL에 오타가 있는지 확인하세요.</li>
-                        <li>이 페이지는 아직 지정한 언어로 제공되지 않을 수 있습니다.</li>
-                    </ul>
-                </div>
+        <a class="link link-button error__button error__link" href="/">
+            <div class="wrapper">
+                첫 페이지로 돌아가기
+                <span class="material-symbols-outlined">
+                    double_arrow
+                </span>
             </div>
-        </section>
+        </a>
     </main>
 
     <footer></footer>

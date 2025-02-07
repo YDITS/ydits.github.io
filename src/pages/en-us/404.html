@@ -63,23 +63,18 @@
 <body>
     <header></header>
 
-    <main>
-        <section id="main">
-            <h1>404 Not found</h1>
-            <a href="./">Go back to top page</a>
+    <main class="error">
+        <h1 class="error__title">404 Not Found</h1>
+        <p class="error__description">The requested page was not found.</p>
 
-            <div style="margin: 1em 0; border-radius: .5em; padding: 1em 2em; background-color: #e0e0ff;">
-                <div>
-                    <p>
-                        The requested page was not found.
-                    </p>
-                    <ul>
-                        <li>Please check the URL for typos.</li>
-                        <li>Page may not yet be available in the specified language.</li>
-                    </ul>
-                </div>
+        <a class="link link-button error__button error__link" href="/">
+            <div class="wrapper">
+                Back to top page
+                <span class="material-symbols-outlined">
+                    double_arrow
+                </span>
             </div>
-        </section>
+        </a>
     </main>
 
     <footer></footer>
