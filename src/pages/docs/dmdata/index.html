@@ -1,0 +1,300 @@
+<!--
+
+    YDITS Site
+
+    Copyright (C) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project DM-D.S.S について解説します。">
+    <meta name="keywords" content="YDITS">
+    <meta name="color-scheme" content="dark">
+
+    <title>Project DM-D.S.S | YDITS公式サイト</title>
+
+    <link rel="alternate" hreflang="ja-JP" href="https://www.ydits.net/docs/dmdata/">
+    <link rel="alternate" hreflang="en-US" href="https://www.ydits.net/en-us/docs/dmdata/">
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ydits.net/zh-cn/docs/dmdata/">
+    <link rel="alternate" hreflang="zh-TW" href="https://www.ydits.net/zh-tw/docs/dmdata/">
+    <link rel="alternate" hreflang="ko-KR" href="https://www.ydits.net/ko-kr/docs/dmdata/">
+
+    <meta property="og:url" content="https://www.ydits.net/docs/dmdata/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="YDITS公式サイト">
+    <meta property="og:title" content="Project DM-D.S.S">
+    <meta property="og:description" content="Project DM-D.S.S について解説します。">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@YDITS_JP">
+
+    <link rel="icon" type="image/png" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
+    <link rel="apple-touch-icon" href="https://cdn.ydits.net/images/ydits_logos/ydits_icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="/Styles/ui.css">
+    <link rel="stylesheet" href="/docs/styles/docs.css">
+    <link rel="stylesheet" href="./styles/dmdata.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFN4DKGM3F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DFN4DKGM3F');
+    </script>
+
+    <script src="/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="/Scripts/common.js"></script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; URL=/noscript/">
+    </noscript>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <section id="hero" class="section hero">
+            <h1 id="heroTitle" class="hero__title">Project DM-D.S.S</h1>
+            <p id="heroDescription" class="hero__description">防災気象情報を取得できるサービス</p>
+        </section>
+
+        <section id="main" class="section main">
+            <section id="overview" class="section main__section overview">
+                <h2 class="section__title overview__title section__title--bar">Project DM-D.S.S とは</h2>
+
+                <p class="section__content overview__content">
+                    Project DM-D.S.S は、防災気象情報を提供しているサービスです。<br>
+                    WebSocket API を通して手軽に防災気象情報を取得できます。<br><br>
+                    また運営者は予報業務許可（地震動）を取得しており、気象庁のガイドラインに準拠して運営されているため、情報の信頼性が非常に高いです。
+                </p>
+
+                <a href="https://dmdata.jp/" id="officialSiteLink" class="overview__official-site-link">
+                    公式サイト
+
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </section>
+
+            <section id="applications" class="section main__section applications">
+                <h2 class="section__title applications__title section__title--bar">Project DM-D.S.S を利用しているアプリケーション</h2>
+
+                <div class="section__content applications__content">
+                    <ul id="applicationsList" class="applications-list applications__ul">
+                        <li class="applications__li applications-list__li">
+                            <a href="https://jquake.net/" class="applications-list__a">
+                                <div>
+                                    <h3 class="applications-list__label">JQuake</h3>
+
+                                    <p class="applications-list__description">
+                                        日本の緊急地震速報、地震速報、津波情報、NIED強震モニタをリアルタイムで確認できます。<br>
+                                        Windows, MacOS, Linux に対応しています。<br>
+                                    </p>
+
+                                    <span class="applications-list__copyright">&copy; François LN</span>
+                                </div>
+
+                                <div>
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="applications__li applications-list__li">
+                            <a href="https://svs.ingen084.net/kyoshineewviewer/" class="applications-list__a">
+                                <div>
+                                    <h3 class="applications-list__label">KyoshinEewViewer for ingen</h3>
+
+                                    <p class="applications-list__description">
+                                        日本の緊急地震速報、地震情報、津波情報、NIED強震モニタをリアルタイムで確認できます。<br>
+                                        Windowsに対応しています。
+                                    </p>
+
+                                    <span class="applications-list__copyright">&copy; ingenWorkS</span>
+                                </div>
+
+                                <div>
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="applications__li applications-list__li">
+                            <a href="https://ameuma773.github.io/EarthQuickly/index.html" class="applications-list__a">
+                                <div>
+                                    <h3 class="applications-list__label">EarthQuickly</h3>
+
+                                    <p class="applications-list__description">
+                                        日本の緊急地震速報、地震情報、津波情報、NIED強震モニタをリアルタイムで確認できます。<br>
+                                        Windowsに対応しています。
+                                    </p>
+
+                                    <span class="applications-list__copyright">&copy; Ameuma773</span>
+                                </div>
+
+                                <div>
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="services" class="section main__section services">
+                <h2 class="section__title services__title section__title--bar">提供されている情報</h2>
+
+                <div class="section__content services__content">
+                    <ul id="servicesList" class="services-list services__ul">
+                        <li class="services__li services-list__li">
+                            <h3 class="services-list__label">緊急地震速報</h3>
+
+                            <ul class="services__ul">
+                                <li class="services__li">緊急地震速報（地震動予報）</li>
+                                <li class="services__li">緊急地震速報（警報）</li>
+                            </ul>
+                        </li>
+
+                        <li class="services__li services-list__li">
+                            <h3 class="services-list__label">地震と津波関連</h3>
+
+                            <ul class="services__ul">
+                                <li class="services__li">震度速報</li>
+                                <li class="services__li">震源に関する情報</li>
+                                <li class="services__li">震源・震度に関する情報</li>
+                                <li class="services__li">地震の活動状況等に関する情報</li>
+                                <li class="services__li">南海トラフ関連情報</li>
+                                <li class="services__li">地震回数に関する情報</li>
+                                <li class="services__li">顕著な地震の震源要素更新のお知らせ</li>
+                                <li class="services__li">長周期地震動に関する観測情報</li>
+                                <li class="services__li">推計震度分布作図データ</li>
+                                <li class="services__li">津波警報・注意報・予報</li>
+                                <li class="services__li">津波情報</li>
+                                <li class="services__li">国際津波関連情報</li>
+                                <li class="services__li">地震・津波に関するお知らせ</li>
+                            </ul>
+                        </li>
+
+                        <li class="services__li services-list__li">
+                            <h3 class="services-list__label">気象警報・注意報関連</h3>
+
+                            <ul class="services__ul">
+                                <li class="services__li">気象警報・注意報</li>
+                                <li class="services__li">特別警報報知</li>
+                                <li class="services__li">記録的短時間大雨情報</li>
+                                <li class="services__li">気象情報</li>
+                                <li class="services__li">早期天候情報</li>
+                                <li class="services__li">竜巻注意情報</li>
+                                <li class="services__li">スモッグ気象情報</li>
+                                <li class="services__li">全般台風情報</li>
+                                <li class="services__li">台風解析・予報情報</li>
+                                <li class="services__li">台風の暴風域に入る確率</li>
+                                <li class="services__li">土砂災害警戒情報</li>
+                                <li class="services__li">指定河川洪水予報</li>
+                                <li class="services__li">高温注意情報</li>
+                                <li class="services__li">潮位情報</li>
+                            </ul>
+                        </li>
+
+                        <li class="services__li services-list__li">
+                            <h3 class="services-list__label">天気予報関連</h3>
+
+                            <ul class="services__ul">
+                                <li class="services__li">府県天気予報／地域時系列予報</li>
+                                <li class="services__li">府県週間予報</li>
+                                <li class="services__li">天気概況</li>
+                                <li class="services__li">早期注意情報（警報級の可能性）</li>
+                                <li class="services__li">全般季節予報</li>
+                                <li class="services__li">地方季節予報</li>
+                                <li class="services__li">全般２週間気温予報</li>
+                                <li class="services__li">地方２週間気温予報</li>
+                                <li class="services__li">天気図(XML)</li>
+                            </ul>
+                        </li>
+
+                        <li class="services__li services-list__li">
+                            <h3 class="services-list__label">定時報・その他</h3>
+
+                            <ul class="services__ul">
+                                <li class="services__li">大雨危険度通知</li>
+                                <li class="services__li">海上警報</li>
+                                <li class="services__li">海上予報</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="name" class="section main__section name">
+                <h2 class="section__title name__title section__title--bar">表記揺れ一覧</h2>
+
+                <div class="section__content name__content">
+                    <ul class="name__ul">
+                        <li class="name__li">Project DM-D.S.S</li>
+                        <li class="name__li">Project DM(Disaster Mitigation)-Data Send Service</li>
+                        <li class="name__li">Project Disaster Mitigation-Data Send Service</li>
+                        <li class="name__li">P. DM-D.S.S</li>
+                        <li class="name__li">DM-D.S.S</li>
+                        <li class="name__li">DMDATA</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="about" class="section main__section about">
+                <h2 class="section__title about__title section__title--bar">本ページの目的</h2>
+
+                <div class="section__content about__content">
+                    <p>防災事業をさらに普及させる目的で、YDITS以外の便利な防災サービスをご紹介します。</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="disclaimer" class="section disclaimer">
+            <h2 class="section__title disclaimer__title">免責事項</h2>
+
+            <div class="section__content disclaimer__content">
+                <ul class="disclaimer__ul">
+                    <li class="disclaimer__li">
+                        <p>本ページは Project DM-D.S.S の公式ではありません。
+                        <p>
+                    </li>
+
+                    <li>
+                        <p>本ページの内容は、2025年2月11日時点のものであり、提供内容は変更される場合があります。サービスを利用する前に、公式サイトで最新の情報をご確認ください。</p>
+                    </li>
+
+                    <li class="disclaimer__li">
+                        <p>本ページに掲載されているコンテンツの著作権は、その著作者に帰属します。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

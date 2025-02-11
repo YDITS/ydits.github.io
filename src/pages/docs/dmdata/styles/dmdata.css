@@ -1,0 +1,124 @@
+
+.main {
+    background-color: #202020;
+    color: #f0f0f0;
+}
+
+.overview__official-site-link {
+    display: inline-flex;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 100vw;
+    box-shadow: 0 0 .5rem #00000080;
+    padding: 1rem;
+    background-color: #303030;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.overview__official-site-link:hover {
+    box-shadow: 0 0 .2rem #00000080;
+    background-color: #404040;
+}
+
+.section__title--bar::before {
+    background-color: #f0f0f0;
+}
+
+.services__ul {
+    padding: 0 2rem;
+}
+
+.name__ul,
+.about__ul {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: 0 2rem;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.services-list__li {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    box-shadow: 0 0 .5rem #00000080;
+    border-radius: 1rem;
+    gap: 1rem;
+
+    list-style: none;
+    background-color: #303030;
+    padding: 1rem;
+}
+
+.services-list__label {
+    font-size: 1.5rem;
+}
+
+.applications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.applications-list__li {
+    box-shadow: 0 0 .5rem #00000080;
+    border-radius: 1rem;
+    list-style: none;
+    background-color: #303030;
+}
+
+.applications-list__li:hover {
+    box-shadow: 0 0 .2rem #00000080;
+    background-color: #404040;
+}
+
+.applications-list__a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    color: #f0f0f0;
+    text-decoration: none;
+    user-select: none;
+}
+
+.applications-list__label {
+    font-size: 1.5rem;
+}
+
+.applications-list__copyright {
+    color: #c0c0c0;
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .8rem;
+    background-color: #282828;
+    color: #c0c0c0;
+}
+
+.disclaimer__title {
+    font-size: 1rem;
+}
+
+.disclaimer__content {
+    font-size: .8rem;
+}
+
+.disclaimer__ul {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: 0 1em;
+    list-style: none;
+}
