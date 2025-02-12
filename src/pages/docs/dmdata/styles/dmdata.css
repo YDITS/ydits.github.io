@@ -1,7 +1,36 @@
+@charset "UTF-8";
 
-.main {
-    background-color: #202020;
-    color: #f0f0f0;
+/*
+
+    YDITS Site
+
+    Copyright (C) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+*/
+
+.section__title--bar::before {
+    background-color: #303030;
+}
+
+.section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name__ul,
+.about__ul {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: 0 2rem;
+}
+
+.overview__content {
+    line-height: 2em;
 }
 
 .overview__official-site-link {
@@ -21,19 +50,40 @@
     background-color: #404040;
 }
 
-.section__title--bar::before {
-    background-color: #f0f0f0;
+.features-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.features-list__li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50vw;
+    border: 1px solid #808080;
+    gap: 1rem;
+    width: 33%;
+    list-style: none;
+    padding: 2rem;
+}
+
+.features-list__label {
+    font-size: 1.5rem;
+}
+
+.features-list__label--bule {
+    color: #4080c0;
+}
+
+.features-list__label--red {
+    color: #c04040;
+}
+
+.features-list__label--green {
+    color: #40c040;
 }
 
 .services__ul {
-    padding: 0 2rem;
-}
-
-.name__ul,
-.about__ul {
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
     padding: 0 2rem;
 }
 
@@ -53,7 +103,7 @@
     gap: 1rem;
 
     list-style: none;
-    background-color: #303030;
+    background-color: #f0f0f0;
     padding: 1rem;
 }
 
@@ -76,7 +126,7 @@
 
 .applications-list__li:hover {
     box-shadow: 0 0 .2rem #00000080;
-    background-color: #404040;
+    background-color: #505050;
 }
 
 .applications-list__a {
@@ -90,12 +140,18 @@
     user-select: none;
 }
 
+.applications-list__content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
 .applications-list__label {
     font-size: 1.5rem;
 }
 
 .applications-list__copyright {
-    color: #c0c0c0;
+    color: #f0f0f0;
 }
 
 .disclaimer {
@@ -103,8 +159,8 @@
     flex-direction: column;
     gap: .5rem;
     padding: .8rem;
-    background-color: #282828;
-    color: #c0c0c0;
+    background-color: #e0e0e0;
+    color: #606060;
 }
 
 .disclaimer__title {
@@ -121,4 +177,20 @@
     gap: .3rem;
     padding: 0 1em;
     list-style: none;
+}
+
+@media (max-width: 768px) {
+    .features-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .features-list__ul {
+        width: 100%;
+    }
+
+    .features-list__li {
+        width: calc(100% - 4rem);
+    }
 }
